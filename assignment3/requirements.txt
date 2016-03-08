@@ -45,3 +45,4 @@ tornado==4.3
 traitlets==4.0.0
 wsgiref==0.1.2
 h5py==2.5.0
+scikit-image
