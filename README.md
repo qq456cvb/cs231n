@@ -1,42 +1,34 @@
-# cs231n
+# CS231n: Convolutional Neural Networks for Visual Recognition — Assignment Solutions
 
-<!-- README refined by Cursor -->
+Complete solutions for the assignments of Stanford's [CS231n](https://cs231n.stanford.edu/) (2016 edition), implemented in NumPy from scratch. All coding parts are completed; a few inline written questions are left unanswered.
 
-cs231n assignments
+## Contents
 
-## Overview
+### Assignment 1 — Image Classification Basics
+- `knn.ipynb` — k-Nearest Neighbor classifier with vectorized distance computation
+- `svm.ipynb` — Multiclass SVM loss, analytic vs. numerical gradients, SGD
+- `softmax.ipynb` — Softmax classifier with cross-entropy loss
+- `two_layer_net.ipynb` — Two-layer fully-connected network with backpropagation
+- `features.ipynb` — Classification on HOG/color-histogram features
 
-This repository contains Python, JavaScript, C++, Jupyter Notebook code from an older research, course, or prototype project. The README has been refreshed to make the repository easier to scan while preserving the original notes below.
+### Assignment 2 — Neural Networks and Convolution
+- `FullyConnectedNets.ipynb` — Modular layer design, arbitrary-depth networks, SGD variants (momentum, RMSProp, Adam)
+- `BatchNormalization.ipynb` — Batch normalization forward/backward
+- `Dropout.ipynb` — Dropout regularization
+- `ConvolutionalNetworks.ipynb` — Convolution/pooling layers and a working CNN
 
-## Repository Contents
-
-- `assignment1/`
-- `assignment2/`
-- `assignment3/`
-
-## Setup
-
-- This legacy repo does not pin a full environment. Start from the language/toolchain implied by the source files, then install missing packages as reported by the runtime.
+### Assignment 3 — Recurrent Networks and Visualization
+- `RNN_Captioning.ipynb` — Vanilla RNN for image captioning on MS-COCO
+- `LSTM_Captioning.ipynb` — LSTM-based captioning
+- `ImageGradients.ipynb` — Saliency maps and fooling images
+- `ImageGeneration.ipynb` — Class visualization, feature inversion, DeepDream
 
 ## Usage
 
-- inspect the source directories listed below; many of these older repos were kept as research prototypes rather than packaged applications.
+Each assignment folder is self-contained with its own `requirements.txt`. Datasets (CIFAR-10, MS-COCO features) are downloaded by the scripts provided in each assignment's `cs231n/datasets/` directory.
 
-## Data and Artifacts
+Note: this code targets the 2016 course environment (Python 2.7 era). Expect minor adjustments (e.g., `print` statements, old NumPy APIs) when running on a modern stack.
 
-No new large artifact is stored in this repository. If a dataset or checkpoint is required, follow the links and notes in the original section below.
+## Acknowledgements
 
-## Status
-
-This is a `Batch C` cleanup pass for a legacy repository. Commands may require dependency/version adjustments on a modern machine.
-
-## License
-
-No explicit license file was found in this checkout; check the original project context before reusing code.
-
-## Original Notes
-
-# cs231n
-cs231n assignments
-
-All assignments completed but some inline iPython questions are not answered
+Assignment scaffolding by the CS231n course staff. See the [course notes](https://cs231n.github.io/) for the accompanying material.
